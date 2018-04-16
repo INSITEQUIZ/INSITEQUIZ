@@ -9,7 +9,7 @@ Install the dependencies:
 
 **Development Workflow**
 
-Run a development in android emulator:
+Run a development flow in android emulator:
 
 `react-native run-android`
 
