@@ -1,23 +1,12 @@
 language: node_js
 node_js:
-  - node
-
-env:
-  - CI = false
-  global:
-    - NODE_VERSION=stable
-    
-
-before_install:
-  - set -e
-  - curl -o- -L https://yarnpkg.com/install.sh | bash
-  - export PATH=$HOME/.yarn/bin:$PATH
-  
-install:
-  - yarn install
-
+  - "stable"
+cache:
+  directories:
+  - node_modules #Cache node_modules for faster builds
 script:
-  - yarn run start
+  - npm install
+  - npm run start
 
 after_script:
   - echo "BUILD FINISHED"
