@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+  - "stable"
+cache:
+  directories:
+  - node_modules #Cache node_modules for faster builds
+script:
+  - npm install
+  - react-native run-android
+
+after_script:
+  - echo "BUILD FINISHED"
+  
