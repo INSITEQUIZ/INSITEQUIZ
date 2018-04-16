@@ -6,7 +6,7 @@ cache:
   - node_modules #Cache node_modules for faster builds
 script:
   - npm install
-  - npm run start
+  - react-native run-android
 
 after_script:
   - echo "BUILD FINISHED"
