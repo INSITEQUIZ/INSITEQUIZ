@@ -1,5 +1,4 @@
 # INSITEQUIZ
-------------
 React native quiz android app
 
 
